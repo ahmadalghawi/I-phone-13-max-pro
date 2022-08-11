@@ -1,0 +1,133 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: black;
+    color :white;
+}
+nav {
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 80px;
+}
+nav .logo {
+    margin-left: 50px;
+}
+nav .logo img {
+    width: 60px;
+}
+nav .headLink {
+    margin-right: 50px;
+    
+    
+}
+nav .headLink ul li {
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+}
+.container{
+    margin: 40px 80px;
+}
+.container .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text {
+    margin: 0 20px 100px 70px;
+}
+.text h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.text p {
+    font-size: 20px;
+    font-weight: 500;
+    width: 70%;
+    margin-bottom: 20px;
+}
+.text #btn {
+    width: 140px;
+    height: 50px;
+    border-radius: 40px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.imagep {
+    margin-right: 200px;
+}
+.imagep img {
+    width: 250px;
+    
+}
+.phonImg {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateY(-50%);
+}
+.phonImg img{
+    width: 50px;
+    cursor: pointer;
+    transition: .5s;
+}
+.phonImg img:hover {
+    transform: scale(1.2);
+}
+@media (max-width:767px ) {
+    .container .head {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    nav {
+        flex-direction: column;
+        margin: 15px -20px;
+        
+    }
+    nav .logo {
+        margin-left: 0;
+    }
+    nav .headLink ul li {
+        padding: 15px;
+    }
+    
+nav .headLink {
+    text-align: center;
+    margin-right: 0;
+}
+.phonImg {
+    transform: translateY(50%);
+    left: 0;
+    position: relative;
+    width: max-content;
+    margin: 60px -20px 0;
+}
+.text h1 {
+    font-size:30px;
+}
+.text p {
+    font-size: 15px;
+}
+.text #btn {
+    width: 100px;
+    height: 40px;
+    font-size: 12px
+}
+.imagep {
+    margin: 0;
+}
+.imagep img {
+    width: 200px;
+}
+}
